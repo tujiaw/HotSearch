@@ -514,7 +514,9 @@
 			baseConfigurationReference = 66E223F8B8C75FC785F899E0 /* Pods-HotSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (QM84W4496D)";
 				INFOPLIST_FILE = HotSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tjw.HotSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -527,7 +529,9 @@
 			baseConfigurationReference = 35F76AF184972B53923F55A1 /* Pods-HotSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (QM84W4496D)";
 				INFOPLIST_FILE = HotSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tjw.HotSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
