@@ -48,4 +48,16 @@ class HotWordTableViewController: UITableViewController {
         }
         return cell
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.row < Data.sharedManage.hotWord.list.count {
+            let keyword = Data.sharedManage.hotWord.list[indexPath.row].name
+            if let newKeyword = keyword.stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet()) {
+                if let url = NSURL(string: "https://www.baidu.com/s?wd=\(newKeyword)") {
+                    UIApplication.sharedApplication().openURL(url)
+                }
+            }
+
+        }
+    }
 }
